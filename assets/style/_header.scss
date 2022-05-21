@@ -1,0 +1,25 @@
+#header-wrapper {
+  background: #fff;
+  height: 80px;
+  .header-wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    .left-wrap {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      a {
+        img {
+          width: 200px;
+        }
+      }
+    }
+    .right-wrap {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  }
+}
