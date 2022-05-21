@@ -68,17 +68,17 @@
             background-color: #fff;
             width: 320px;
             box-shadow: 0 0 5px 1px #eee;
-            &.user-profile-menu {
-              padding: 0 20px;
-              & > ul {
-                & > li {
+            & > ul {
+              & > li {
+                width: 100%;
+                a {
                   width: 100%;
-                  a {
-                    width: 100%;
-                    display: block;
-                  }
+                  display: block;
                 }
               }
+            }
+            &.user-profile-menu {
+              padding: 0 20px;
               .profile-wrap {
                 display: flex;
                 align-items: center;
@@ -169,12 +169,11 @@
                 }
               }
             }
-            &.invitation-menu {
+            &.invitation-menu,
+            &.matches-menu {
               & > ul {
                 & > li {
-                  width: 100%;
                   a {
-                    width: 100%;
                     display: flex;
                     border-bottom: 1px solid #ddd;
                     padding: 7px 20px 7px 35px;
@@ -204,6 +203,63 @@
                 padding: 0 20px;
                 font-weight: 600;
                 font-size: 15px;
+              }
+            }
+            &.matches-menu {
+              & > ul {
+                & > li {
+                  a {
+                    padding: 10px 30px;
+                  }
+                }
+              }
+            }
+            &.notification-menu {
+              .profile-wrap {
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+                border-bottom: 1px solid #ddd;
+                transition: 0.4s background-color;
+                &:hover {
+                  background-color: #eaeaea;
+                }
+                .image-wrap {
+                  width: 55px;
+                  height: 55px;
+                  border-radius: 50%;
+                  border: 1px solid #ddd;
+                  overflow: hidden;
+                  display: flex;
+                  justify-content: center;
+                  img {
+                    height: 55px;
+                  }
+                }
+                .name-wrap {
+                  margin-left: 10px;
+                  width: calc(100% - 65px);
+                  .name {
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: #333;
+                  }
+                  .edit-btn {
+                    font-size: 13px;
+                    color: #a1a1a1;
+                  }
+                }
+              }
+              .see-add-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                font-size: 14px;
+                a {
+                  color: #333;
+                  display: block;
+                }
               }
             }
           }
