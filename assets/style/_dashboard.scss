@@ -38,6 +38,27 @@
             color: #a1a1a1;
           }
         }
+        .viewed-count-wrap {
+          padding: 20px 20px;
+          border-top: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          .view-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & + .view-wrap {
+              margin-top: 7px;
+            }
+            .view-text {
+              font-size: 15px;
+            }
+            .view-count {
+              font-size: 15px;
+              color: #236daa;
+              font-weight: 700;
+            }
+          }
+        }
       }
     }
     .center-wrap {
