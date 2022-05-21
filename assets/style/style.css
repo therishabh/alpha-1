@@ -170,7 +170,7 @@ img {
 }
 
 .viewport-container {
-  width: 1605px;
+  width: 1405px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -223,6 +223,7 @@ img {
   height: 45px;
   border-radius: 5px;
   width: 250px;
+  padding: 0 45px 0 10px;
 }
 
 #header-wrapper .header-wrap .left-wrap .search-wrap i {
@@ -474,7 +475,7 @@ img {
   padding: 10px 30px;
 }
 
-#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap {
+#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap, #header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.messages-menu .profile-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,11 +488,11 @@ img {
   transition: 0.4s background-color;
 }
 
-#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap:hover {
+#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap:hover, #header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.messages-menu .profile-wrap:hover {
   background-color: #eaeaea;
 }
 
-#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap .image-wrap {
+#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap .image-wrap, #header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.messages-menu .profile-wrap .image-wrap {
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -505,27 +506,27 @@ img {
           justify-content: center;
 }
 
-#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap .image-wrap img {
+#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap .image-wrap img, #header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.messages-menu .profile-wrap .image-wrap img {
   height: 55px;
 }
 
-#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap .name-wrap {
+#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap .name-wrap, #header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.messages-menu .profile-wrap .name-wrap {
   margin-left: 10px;
   width: calc(100% - 65px);
 }
 
-#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap .name-wrap .name {
+#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap .name-wrap .name, #header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.messages-menu .profile-wrap .name-wrap .name {
   font-size: 13px;
   font-weight: 600;
   color: #333;
 }
 
-#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap .name-wrap .edit-btn {
+#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .profile-wrap .name-wrap .edit-btn, #header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.messages-menu .profile-wrap .name-wrap .edit-btn {
   font-size: 13px;
   color: #a1a1a1;
 }
 
-#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .see-add-wrap {
+#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .see-add-wrap, #header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.messages-menu .see-add-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,9 +540,31 @@ img {
   font-size: 14px;
 }
 
-#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .see-add-wrap a {
+#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.notification-menu .see-add-wrap a, #header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.messages-menu .see-add-wrap a {
   color: #333;
   display: block;
+}
+
+#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.messages-menu .search-input-wrap {
+  padding: 12px 20px;
+  position: relative;
+}
+
+#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.messages-menu .search-input-wrap .icon-wrap {
+  left: 34px;
+  position: absolute;
+  font-size: 18px;
+  color: #707070;
+  margin-top: 5px;
+}
+
+#header-wrapper .header-wrap .right-wrap > ul > li .nested-menu.messages-menu .search-input-wrap input {
+  width: 100%;
+  border-radius: 25px;
+  height: 40px;
+  border: 0;
+  background: #e9e9e9;
+  padding: 0 40px;
 }
 
 #dashboard .dashboard-wrap {
