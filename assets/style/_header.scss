@@ -1,6 +1,8 @@
 #header-wrapper {
   background: #fff;
   height: 80px;
+  border-bottom: 1px solid #e6e8e6;
+  box-shadow: 0 0 9px 2px #ddd;
   .header-wrap {
     display: flex;
     align-items: center;
@@ -15,11 +17,40 @@
           width: 200px;
         }
       }
+      .search-wrap {
+        margin-left: 20px;
+        position: relative;
+        input {
+          background: #faf9f5;
+          border: 0;
+          height: 45px;
+          border-radius: 5px;
+          width: 250px;
+        }
+        i {
+          position: absolute;
+          right: 10px;
+          font-size: 27px;
+          line-height: 45px;
+          color: #cac9c7;
+        }
+      }
     }
     .right-wrap {
       display: flex;
       align-items: center;
       height: 100%;
+      ul {
+        li {
+          a {
+            color: #5d6669;
+            font-weight: 800;
+            font-size: 15px;
+            padding: 5px 15px;
+            text-transform: uppercase;
+          }
+        }
+      }
     }
   }
 }
