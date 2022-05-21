@@ -41,13 +41,39 @@
       align-items: center;
       height: 100%;
       ul {
+        height: 100%;
         li {
+          position: relative;
           a {
             color: #5d6669;
             font-weight: 800;
             font-size: 15px;
-            padding: 5px 15px;
+            padding: 28px 15px;
             text-transform: uppercase;
+            height: 100%;
+          }
+          &:hover {
+            .nested-menu {
+              display: block;
+            }
+          }
+          .nested-menu {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #fff;
+            width: 250px;
+            box-shadow: 0 0 5px 1px #eee;
+            &.user-profile-menu {
+              .profile-wrap {
+                .image-wrap {
+                  img {
+                    width: 80px;
+                    height: 80px;
+                  }
+                }
+              }
+            }
           }
         }
       }
