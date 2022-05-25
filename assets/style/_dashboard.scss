@@ -87,7 +87,7 @@
       }
     }
     & > .center-wrap {
-      width: 60%;
+      width: calc(60% - 30px);
       .daily-matches-card {
         .card-header {
           display: flex;
